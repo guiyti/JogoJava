@@ -2,14 +2,19 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("\n\n\n");
+        System.out.println("\n\n");
 
         Scanner input = new Scanner(System.in);
 
         
+        // bloco gera valor aleatório em uma faixa
+        int maxRand = 9999;
+        int minRand = 1000;
+        double faixa = Math.random()*(maxRand-minRand);
+        double rand = Math.round(faixa) + minRand;
 
-        // int codigoCorreto = (int) rand;
-        int codigoCorreto = 5431;
+        int codigoCorreto = (int) rand;
+        // int codigoCorreto = 5431;
         
         // declaração de variáveis
         String entrada;
